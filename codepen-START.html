@@ -11,7 +11,12 @@
   <link rel="stylesheet" href="./CodeMirror/theme/ayu-mirage.css">
   <script src="./CodeMirror/lib/codemirror.js"></script>
   <script src="./CodeMirror/mode/javascript/javascript.js"></script>
-  <link rel="stylesheet" href="style-START.css">
+    <script src="./CodeMirror/mode/css/css.js"></script>
+    <script src="./CodeMirror/mode/xml/xml.js"></script>
+    <link rel="stylesheet" href="style-START.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -29,6 +34,15 @@
         <button class="button button--dirty"><i class="fa fa-cloud icon-header"></i>Save As Private</button>
         <button class="button button--dirty"><i class="fa fa-cog icon-header"></i>Settings</button>
         <button class="button button--dirty"><i class="fa fa-eye icon-header"></i>Change View</button>
+          <div class="dropleft header__dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Save</a>
+                  <a class="dropdown-item" href="#">Save As Private</a>
+                  <a class="dropdown-item" href="#">Settings</a>
+                  <a class="dropdown-item" href="#">Change View</a>
+              </div>
+          </div>
         <img class="avatar" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/28831/profile/profile-80.jpg?1" alt="My picture"
              height="44">
       </div>

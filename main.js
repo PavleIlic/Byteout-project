@@ -1,6 +1,6 @@
 var myCodeMirror = CodeMirror(document.getElementById('html__editor'), {
     lineNumbers: true,
-    mode: "html",
+    mode: "xml",
     theme: "ayu-mirage"
 });
 

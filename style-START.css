@@ -178,6 +178,16 @@ h6 {
   height: 260px;
 }
 
-@media only screen and (max-width: 770px) {
-  .pen
+
+.header__dropdown{
+  display: none;
+}
+
+@media only screen and (max-width: 860px) {
+  .save-details > button{
+    display: none;
+  }
+  .header__dropdown{
+    display: inline;
+  }
 }
