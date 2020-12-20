@@ -22,63 +22,74 @@
         </div>
       </div>
       <div class="save-details">
-        <button class="button button--dirty"><i class="fa fa-cloud"></i>Save</button>
-        <button class="button button--dirty"><i class="fa fa-cloud"></i>Save As Private</button>
-        <button class="button button--dirty"><i class="fa fa-cog"></i>Settings</button>
-        <button class="button button--dirty"><i class="fa fa-eye"></i>Change View</button>
+        <button class="button button--dirty"><i class="fa fa-cloud icon-header"></i>Save</button>
+        <button class="button button--dirty"><i class="fa fa-cloud icon-header"></i>Save As Private</button>
+        <button class="button button--dirty"><i class="fa fa-cog icon-header"></i>Settings</button>
+        <button class="button button--dirty"><i class="fa fa-eye icon-header"></i>Change View</button>
         <img class="avatar" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/28831/profile/profile-80.jpg?1" alt="My picture"
              height="44">
       </div>
     </header>
     <section class="code">
-      <div class="editor">
-        <header class="editor__header">
-          <button class="button button--small editor__settings">⚙</button>
-          <h3 class="editor__heading">HTML</h3>
-          <button class="button button--small editor__settings">⌄</button>
-        </header>
-        <div class="editor__code">
-          <div class="editor__gutter">
-            <span class="editor__number">1</span>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="editor">
+            <header class="editor__header d-flex justify-content-between">
+              <div>
+                <button class="button button--small editor__settings"><i class="fa fa-cog fa-wheel"></i></button>
+                <h3 class="editor__heading d-inline">HTML</h3>
+              </div>
+              <button class="button button--small editor__settings"><i class="fa fa-arrow-down"></i></button>
+            </header>
+            <div class="editor__code">
+              <div class="editor__gutter">
+                <span class="editor__number">1</span>
+              </div>
+              <textarea class="editor__input"><p>Oh Hey There!</p></textarea>
+            </div>
           </div>
-
-          <textarea class="editor__input"><p>Oh Hey There!</p></textarea>
         </div>
-      </div>
-      <div class="editor">
-        <header class="editor__header">
-          <button class="button button--small editor__settings">⚙</button>
-          <h3 class="editor__heading">CSS</h3>
-          <button class="button button--small editor__settings">⌄</button>
-        </header>
-        <div class="editor__code">
-          <div class="editor__gutter">
-            <span class="editor__number">1</span>
-            <span class="editor__number">2</span>
-            <span class="editor__number">3</span>
-          </div>
+        <div class="col-md-4">
+          <div class="editor">
+            <header class="editor__header d-flex justify-content-between">
+              <div>
+                <button class="button button--small editor__settings"><i class="fa fa-cog fa-wheel"></i></button>
+                <h3 class="editor__heading d-inline">CSS</h3>
+              </div>
+              <button class="button button--small editor__settings"><i class="fa fa-arrow-down"></i></button>
+            </header>
+            <div class="editor__code">
+              <div class="editor__gutter ">
+                <span class="editor__number d-block">1</span>
+                <span class="editor__number d-block">2</span>
+                <span class="editor__number d-block">3</span>
+              </div>
 
-          <textarea class="editor__input">.codepen {
-  is: cool;
-}
+              <textarea class="editor__input">.codepen {is: cool;}
           </textarea>
-        </div>
+            </div>
 
-      </div>
-      <div class="editor">
-        <header class="editor__header">
-          <button class="button button--small editor__settings">⚙</button>
-          <h3 class="editor__heading">JS</h3>
-          <button class="button button--small editor__settings">⌄</button>
-        </header>
-        <div class="editor__code">
-          <div class="editor__gutter">
-            <span class="editor__number">1</span>
           </div>
-          <textarea class="editor__input">const wes = 'coolest';</textarea>
         </div>
-
+        <div class="col-md-4">
+          <div class="editor">
+            <header class="editor__header d-flex justify-content-between">
+              <div>
+                <button class="button button--small editor__settings"><i class="fa fa-cog fa-wheel"></i></button>
+                <h3 class="editor__heading d-inline">JS</h3>
+              </div>
+              <button class="button button--small editor__settings"><i class="fa fa-arrow-down"></i></button>
+            </header>
+            <div class="editor__code">
+              <div class="editor__gutter">
+                <span class="editor__number">1</span>
+              </div>
+              <textarea class="editor__input">const wes = 'coolest';</textarea>
+            </div>
+          </div>
+        </div>
       </div>
+      <div class="line__breaker"></div>
     </section>
     <section class="preview">
       <iframe src="https://css-tricks.com" frameborder="0"></iframe>
